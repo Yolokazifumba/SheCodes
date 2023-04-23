@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iron deficiency</title>
+    <style>
+      .container {
+        display: block;
+        margin: 30px 30px;
+        background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+        max-width: 600%;
+        padding: 60px;
+      }
+      h1 {
+        text-align: center;
+        font-family:Source Sans Pro,Roboto,sans-serif;
+        color: #003da5;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+      }
+      a:hover {
+        color: red;
+      }
+      img {
+        display: block;
+        width: 400px;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+      .image-caption {
+        width: 400px;
+        display: block;
+        color: black;
+      }
+     
+      h2 {
+        color: #003da5;
+        margin-top: 50px;
+      }
+      button {
+        display: block;
+        margin: 10px 10px;
+        margin-bottom: 30px;
+        border: 1px solid rgb(220, 20, 20);
+        background-color: rgb(220, 20, 20);
+        color: white;
+        font-size: 16px;
+        padding: 10px 10px;
+        border-radius: 10px;
+        transition: all 200ms ease;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: rgb(244, 92, 92);
+        color: white;
+        border: 2px solid rgb(220, 20, 20);
+      }
+ 
+      .coder {
+        font-weight: lighter;
+        font-family:cursive;
+        font-size: 14px;
+        display: block;
+        margin-left: 350px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <h1><strong>What is Iron and Iron deficiency</strong></h1>
+    <p>
+      Iron is a mineral that the body needs for growth and development. Your
+      body uses iron to make hemoglobin, a protein in red blood cells that
+      carries oxygen from the lungs to all parts of the body, and myoglobin, a
+      protein that provides oxygen to muscles. Your body also needs iron to make
+      some hormones. A lack of iron is called
+      <span
+        ><a
+          href="https://www.parsemus.org/humanhealth/iron-deficiency/?gclid=Cj0KCQjwlPWgBhDHARIsAH2xdNdUd-WY49n59X--nJ5J4Cy1TB2lD8ze4AHo2-Hz1KLTLLr__TuQEJsaAuJ_EALw_wcB"
+          target="_blank"
+          >iron deficiency</a
+        > </span
+      >. It is the most common nutritional deficiency worldwide, causing extreme
+      fatigue and lightheadedness. It affects all ages, with children, women who
+      are pregnant or menstruating, and people receiving kidney dialysis among
+      those at highest risk for this condition.
+    </p>
+    <br />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/414/original/7-Signs-of-chronic-iron-deficiency-most-women-ignore.jpeg?1679670157"
+      alt="normal cells vs iron deficiency cell"
+    />
+    <p class="image-caption">
+      <em
+        >Red blood cells of a normal individual vs red blood cells of an
+        individual with iron deficiency.
+      </em>
+      <br />
+    </p>
+    <h2>Symptoms Of Iron Deficiency</h2>
+    <ul>
+      <li>Extreme fatigue</li>
+      <li>Pale skin</li>
+      <li>heart palpitations</li>
+      <li>Headache, dizziness or lightheadedness</li>
+      <li>
+        Unusual cravings for non-nutritive substances, such as ice, dirt or
+        starch
+      </li>
+    </ul>
+
+    <p>
+      Iron deficiency isn't something to self-diagnose or treat, a blood test is
+      required to confirm if you have iron deficiency or not.
+    </p>
+    <button>free iron test 🧪</button>
+    <hr />
+    <p class="coder">This page was created by Yolokazi Fumba</p>
+    <script>
+      
+    function needATest(){
+      let assumption = prompt("Do you have more than one of the symptoms mentioned above and would like to do an iron blood test?");
+      let name = prompt("What is your name?");
+      name =name.charAt(0).toUpperCase() + name.slice(1);
+      let email = prompt("What is your email address?");
+      
+
+      if(assumption === "yes"){
+        alert( `Hello ${name}! A nurse will contact you on ${email} to arrange a date for your blood test.`)
+        }else{
+        alert (`Hello ${name}! You only have one or two of the mentioned symptoms and thus might not be iron deficient. Go see your doctor for a precise diagnosis.`)  
+        }  
+        }
+    
+    let testButton = document.querySelector("button");
+      testButton.addEventListener("click", needATest);
+    </script>
+  </body>
+  </div>
+</html>
